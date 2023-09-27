@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <!-- Link to MDBootstrap CSS -->
+
+
+
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+    rel="stylesheet"
+    />
+
+    <!-- Your custom CSS can be included here -->
+    <style>
+        /* Add custom styles here */
+        .gradient-custom {
+        background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+      }
+
+      .white-text {
+        color: hsl(52, 0%, 98%);
+        font-weight: 100;
+        font-size: 14px;
+      }
+
+      .card-custom {
+        border-top-left-radius: 10% 50%;
+        border-bottom-left-radius: 10% 50%;
+        background-color: #f8f9fa;
+      }
+
+      .input-custom {
+        background-color: white;
+      }
+
+      .back-button {
+        background-color: hsl(52, 0%, 98%);
+        font-weight: 700;
+        color: black;
+        margin-top: 50px;
+      }
+    </style>
+</head>
+<body style="background-color: rgb(246, 242, 242);">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">HRM Management</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container my-5">
+        <!-- Project Information -->
+        <h1 class="display-4">Delivery Management System</h1>
+        <p class="lead">Experience meets innovation in our project, setting us apart in the world of inventory management...</p>
+
+        <section class="" id="section-related-resources">
+
+            <style>
+              .btn-tag {
+                background-color: #ECEFF1;
+                text-transform: capitalize !important;
+                margin-bottom: 10px;
+                box-shadow: none;
+              }
+      
+              .btn-tag:hover {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;
+              }
+      
+            </style>
+      
+            <h4>Tags</h4>
+      
+              <!--Chips with links-->
+              <div class="justify-content-start text-start w-100 my-5">
+      
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Erp
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Data Management
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Inventory Report
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Inventory
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Inventory Management
+                </a>
+                  
+
+              </div>
+      
+        </section>
+        
+        <!-- Pricing Table -->
+        <section class="text-center">
+          <h4 class="mb-4"><strong>Pricing</strong></h4>
+      
+          <div class="btn-group mb-4" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary active">One Time Purchase</button>
+              <button type="button" class="btn btn-primary active" disabled>Monthly billing</button>
+              <button type="button" class="btn btn-primary" disabled>
+                  Annual billing <small>(2 months FREE)</small>
+              </button>
+          </div>
+      
+          <div class="row">
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Starter</strong></p>
+                          <h5 class="mb-0">Inventory Management Basic</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">All features from the Standard Package</li>
+                              <li class="list-group-item">Delivery Days: 30</li>
+                              <li class="list-group-item">Number of Revisions: 2</li>
+                              <li class="list-group-item"><strong>Price: $90.76</strong></li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-success btn-sm">Get it</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card border border-primary">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Standard</strong></p>
+                          <h5 class="mb-0">Inventory Management Efficient</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">All features from the Standard Package plus extra revisions.</li>
+                              <li class="list-group-item">Delivery Days: 20</li>
+                              <li class="list-group-item">Number of Revisions: 4</li>
+                              <li class="list-group-item"><strong>Price: $136.14</strong></li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-primary btn-sm">Buy now</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Advanced</strong></p>
+                          <h5 class="mb-0">Inventory Management Fast</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">All features from the Standard Package plus exclusive premium features</li>
+                              <li class="list-group-item">Delivery Days: 15</li>
+                              <li class="list-group-item">Number of Revisions: 6</li>
+                              <li class="list-group-item"><strong>Price: $181.52</strong></li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-info btn-sm">Buy now</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Additional</strong></p>
+                          <h5 class="mb-0">Additional revision $27.23</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Add-on for extra revisions</li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-info btn-sm">Buy now</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+          </div>
+        </section>
+
+        <!-- Project Images -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Project Images</h3>
+                <!-- Add project images here -->
+
+                
+                
+
+                
+    
+            </div>
+        </div>
+        
+
+      
+          
+
+        <section class="p-4 d-flex justify-content-center w-100 section-demo">
+
+          <div class="container my-5 py-5">
+    
+            <!--Section: Design Block-->
+            <section>
+    
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="card mb-4">
+    
+    
+                    <div class="card-body">
+                      <p class="text-uppercase h4 text-font">Delivery Country:</p>
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img src="https://mdbcdn.b-cdn.net/img/Others/extended-example/usa2.webp" class="rounded-circle me-2" style="width: 35px;" alt="USA">
+                        </div>
+                        <div class="col-md-8">
+                          <div id="select-wrapper-840360" class="select-wrapper"><div class="form-outline"><input class="form-control select-input placeholder-active active" type="text" role="listbox" aria-multiselectable="false" aria-disabled="false" aria-haspopup="true" aria-expanded="false" readonly="true"><span class="select-arrow"></span><div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 0px;"></div><div class="form-notch-trailing"></div></div><div class="form-label select-fake-value">United States</div></div><select class="select select-initialized">
+                            <option value="1">United States</option>
+                            <option value="2">Spain</option>
+                            <option value="3">Poland</option>
+                            <option value="4">Italy</option>
+                            <option value="5">Greece</option>
+                            <option value="6">Germany</option>
+                            <option value="7">Croatia</option>
+                            <option value="8">Sweden</option>
+                          </select></div>
+                        </div>
+                      </div>
+    
+    
+    
+    
+                    </div>
+                  </div>
+                  <div class="card mb-4 accordion" id="accordionExample">
+                    <div class="card body accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <div class="accordion-button collapsed text-uppercase text-font h4" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Promo/Student Code or Vouchers
+                        </div>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="form-outline d-flex">
+                            <input type="text" id="form1" class="form-control">
+                            <label class="form-label" for="form1" style="margin-left: 0px;">Enter code</label>
+                          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                        </div>
+                      </div>
+    
+    
+    
+                    </div>
+                  </div>
+    
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <p class="text-uppercase fw-bold mb-3 text-font">Email address</p>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <p>your-email@gmail.com</p>
+                        </div>
+                        <div class="col-md-7">
+                          <button type="button" class="btn btn-outline-dark float-end button-color " data-mdb-ripple-color="dark">
+                            Change
+                          </button>
+                        </div>
+                      </div>
+    
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4 position-static">
+                  <div class="card mb-4">
+                    <div class="card-header py-3">
+                      <h5 class="mb-0 text-font">1 item <span class="float-end mt-1" style="font-size: 13px ;">Edit</span>
+                      </h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp" class="rounded-3" style="width: 100px;" alt="Blue Jeans Jacket">
+                        </div>
+                        <div class="col-md-6 ms-3">
+                          <span class="mb-0 text-price">$35.00</span>
+                          <p class="mb-0 text-descriptions">Denim jacket </p>
+                          <span class="text-descriptions fw-bold">Black</span> <span class="text-descriptions fw-bold">UK
+                            8</span>
+                          <p class="text-descriptions mt-0">Qty:<span class="text-descriptions fw-bold">1</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-footer mt-4">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 text-muted">
+                            Subtotal
+                            <span>$35.00</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center px-0 fw-bold text-uppercase">
+                            Total to pay
+                            <span>$35.00</span>
+                          </li>
+                        </ul>
+                      </div>
+    
+    
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-md-8 mb-4">
+                  <div class="card mb-4">
+                    <div class="card-header py-3">
+                      <h5 class="mb-0 text-font text-uppercase">Delivery address</h5>
+                    </div>
+                    <div class="card-body">
+                      <form>
+    
+                        <div class="row mb-4">
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form10Example1" class="form-control">
+                              <label class="form-label" for="form10Example1" style="margin-left: 0px;">First name</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 68.8px;"></div><div class="form-notch-trailing"></div></div></div>
+                          </div>
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form10Example2" class="form-control">
+                              <label class="form-label" for="form10Example2" style="margin-left: 0px;">Last name</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 68px;"></div><div class="form-notch-trailing"></div></div></div>
+                          </div>
+                        </div>
+    
+                        <!-- Text input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form10Example3" class="form-control">
+                          <label class="form-label" for="form10Example3" style="margin-left: 0px;">Company name</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 98.4px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                        <!-- Text input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form10Example4" class="form-control">
+                          <label class="form-label" for="form10Example4" style="margin-left: 0px;">Address</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 55.2px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form10Example5" class="form-control">
+                          <label class="form-label" for="form10Example5" style="margin-left: 0px;">Email</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 40px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                        <!-- Number input -->
+                        <div class="form-outline mb-4">
+                          <input type="number" id="form10Example6" class="form-control">
+                          <label class="form-label" for="form10Example6" style="margin-left: 0px;">Phone</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 44.8px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                          <textarea class="form-control" id="form10Example7" rows="4"></textarea>
+                          <label class="form-label" for="form10Example7" style="margin-left: 0px;">Additional information</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 131.2px;"></div><div class="form-notch-trailing"></div></div></div>
+    
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-2">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form10Example8" checked="">
+                          <label class="form-check-label" for="form10Example8">
+                            Create an account?
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+    
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn button-order col-md-10" style="">Place order</button>
+                  </div>
+    
+                </div>
+    
+    
+    
+    
+    
+    
+              </div>
+    
+            </section>
+            <!--Section: Design Block-->
+    
+          </div>
+    
+        </section>
+
+        <!-- https://mdbootstrap.com/docs/standard/extended/bootstrap-address-form/ -->
+
+
+
+        <div class="container py-5">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col">
+              <div class="card my-4 shadow-3">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-xl-block bg-image">
+                    <img src="https://mdbcdn.b-cdn.net/img/Others/extended-example/delivery.webp" alt="Sample photo"
+                      class="img-fluid" />
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+                      <div class=" justify-content-center align-items-center h-100">
+                        <div class=" text-center" style="margin-top: 220px;">
+                          <i class="fas fa-truck text-white fa-3x"></i>
+                          <p class="text-white title-style">Lorem ipsum delivery</p>
+                          <p class="text-white mb-0"></p>
+        
+                          <figure class="text-center mb-0">
+                            <blockquote class="blockquote text-white">
+                              <p class="pb-3">
+                                <i class="fas fa-quote-left fa-xs text-primary"
+                                  style="color: hsl(210, 100%, 50%) ;"></i>
+                                <span class="lead font-italic">Everything at your doorstep.</span>
+                                <i class="fas fa-quote-right fa-xs text-primary"
+                                  style="color: hsl(210, 100%, 50%) ;"></i>
+                              </p>
+                            </blockquote>
+        
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-4 text-uppercase">Delivery Info</h3>
+        
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1m">First name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example1n">Last name</label>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example8">Address</label>
+                      </div>
+        
+        
+        
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+        
+                          <select class="select">
+                            <option value="1">State</option>
+                            <option value="2">Option 1</option>
+                            <option value="3">Option 2</option>
+                            <option value="4">Option 3</option>
+                          </select>
+        
+                        </div>
+                        <div class="col-md-6 mb-4">
+        
+                          <select class="select">
+                            <option value="1">City</option>
+                            <option value="2">Option 1</option>
+                            <option value="3">Option 2</option>
+                            <option value="4">Option 3</option>
+                          </select>
+        
+                        </div>
+                      </div>
+        
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example3" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example3">Zip</label>
+                      </div>
+        
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example2" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example2">Email</label>
+                      </div>
+        
+                      <div class="d-flex justify-content-end pt-3">
+                        <button type="button" class="btn btn-success btn-lg ms-2"
+                          style="background-color:hsl(210, 100%, 50%) ">Place order</button>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
+        
+
+        <!-- Project Video -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Project Video</h3>
+                <!-- Add the YouTube video embed code here -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QfYZyR3I8Q8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Requirements for the Client -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Requirements for the Client</h3>
+                <p>We need your inventory requirements (e.g.: products you stock, categories, units, exp date, batch number, attributes), existing data if exists, user roles, barcode/RFD details, report format, budget, timeline, and contact details to start.</p>
+
+                <p>In detail, to get started on creating an inventory system for your business, we would need the following information and resources from you:</p>
+
+                <ol>
+                    <li>
+                        <h4>Detailed Requirements:</h4>
+                        <p>Provide a comprehensive list of your inventory management needs and requirements. Include specifics such as the types of products/items you stock, units of measurement, categories, and any special attributes you want to track (e.g., serial numbers, expiration dates).</p>
+                    </li>
+                    <li>
+                        <h4>Inventory Data:</h4>
+                        <p>If you already have an existing inventory system or records, we'll need access to your current inventory data. This includes item names, quantities, descriptions, prices, and any other relevant details.</p>
+                    </li>
+                    <li>
+                        <h4>Integration Requirements:</h4>
+                        <p>If you use other software systems (e.g., accounting software, e-commerce platforms), let us know about any integration requirements. This includes any existing software you want the inventory system to work seamlessly with.</p>
+                    </li>
+                    <li>
+                        <h4>User Roles and Permissions:</h4>
+                        <p>Define who within your organization will have access to the inventory system and specify their roles and permissions. For example, who can add or edit inventory items, who can view reports, etc.</p>
+                    </li>
+                    <li>
+                        <h4>Barcode or RFID Information (if applicable):</h4>
+                        <p>If you plan to use barcodes or RFID tags for item tracking, provide details about your barcode or RFID system. This includes barcode formats and any specific scanners or equipment you use.</p>
+                    </li>
+                    <li>
+                        <h4>Reporting and Analytics Requirements:</h4>
+                        <p>Describe the types of reports, analytics, and the format you need from the inventory system. This could include inventory levels, sales trends, reorder points, and more.</p>
+                    </li>
+                    <li>
+                        <h4>Budget and Timeline:</h4>
+                        <p>Provide information about your budget constraints and the desired project timeline. This will help us align our proposal with your expectations.</p>
+                    </li>
+                    <li>
+                        <h4>Collaboration and Communication:</h4>
+                        <p>Establish communication channels and points of contact. Identify who from your team will be coordinating with our development team and provide their contact information.</p>
+                    </li>
+                    <li>
+                        <h4>Security and Access Control:</h4>
+                        <p>Discuss security requirements, including data encryption, user authentication, and access control measures.</p>
+                    </li>
+                    <li>
+                        <h4>Training Needs:</h4>
+                        <p>Determine whether your team will require training on how to use the inventory system effectively.</p>
+                    </li>
+                </ol>
+
+                <p>Once we have these details, we can begin the process of designing and developing an inventory system tailored to your specific needs. Clear and comprehensive information at the outset will ensure a smoother and more successful project.</p>
+            </div>
+        </div>
+
+
+        <!-- Project Summary -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Project Summary</h3>
+                <small>what sets us apart.</small>
+                <!-- Include the project summary content here -->
+                <p>Experience meets innovation in our project, setting us apart in the world of inventory management. With over 6 years of dedicated service in both job and agency settings, our team is primed to catapult your company's operations to the next level.</p>
+
+                <p>What makes us unique is our unwavering commitment to optimizing your data and operations for seamless functionality through our state-of-the-art system. We prioritize precision, efficiency, and reliability, ensuring that every facet of your inventory management runs smoothly.</p>
+
+                <p>Our hallmark is the delivery of work that is not just original but exudes top-tier quality. We understand the importance of your business processes and have designed our project to align seamlessly with your needs. Trust us to provide a solution that doesn't just meet your expectations but exceeds them.</p>
+
+                <p>Join hands with us, and together, we'll revolutionize how you manage your inventory. Experience the power of innovation combined with years of expertise. Your success story starts here.</p>
+
+            </div>
+        </div>
+
+        <!-- Project Steps -->
+       <!-- Project Steps -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3 class="mb-4">Project Steps</h3>
+            </div>
+        </div>
+
+        <!-- Step 1: Client Purchases the Project -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 1: Client Purchases the Project and Sends Requirements</h4>
+                <p>
+                    The project begins when the client selects one of the available packages (Starter, Standard, Advanced) that aligns with their needs and budget. After purchasing, the client is responsible for submitting detailed inventory management requirements, following the outlined information in the "Requirements for the Client" section.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 2: Project Initiation and Planning -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 2: Project Initiation and Planning</h4>
+                <p>
+                    We, as the service provider, initiate the project by reviewing the client's requirements in detail and seeking clarification if necessary. We develop a project plan that clearly defines the scope, timeline, and necessary resources for the project. We also establish transparent communication channels to facilitate ongoing collaboration.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 3: Development and System Customization -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 3: Development and System Customization</h4>
+                <p>
+                    We commence the development phase, creating the Inventory Management System in accordance with the client's specifications. We customize the system to incorporate all specified features, such as product categorization, user roles, barcode integration, and report formats. We maintain regular updates to keep the client informed about the progress of development.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 4: Data Migration and Integration (if applicable) -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 4: Data Migration and Integration (if applicable)</h4>
+                <p>
+                    If the client has existing inventory data, we execute data migration to transition it into the new system while ensuring data accuracy and integrity. If integration with other software platforms, such as accounting or e-commerce systems, is required, we perform the necessary integrations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 5: Testing and Quality Assurance -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 5: Testing and Quality Assurance</h4>
+                <p>
+                    We conduct comprehensive testing of the Inventory Management System to identify and rectify any bugs or issues. We thoroughly evaluate various aspects, including functionality, security, performance, and user experience. We ensure the system fulfills the specified requirements and operates seamlessly.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 6: Client Review and Approval -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 6: Client Review and Approval</h4>
+                <p>
+                    We present the developed Inventory Management System to the client for their thorough review. The client evaluates the system's functionality, usability, and adherence to their stipulated requirements. Upon the client's approval, the project proceeds to the next phase.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 7: Client Payment -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 7: Client Payment</h4>
+                <p>
+                    Once the client approves the work and is satisfied with the system, they proceed with payment according to the selected package (Starter, Standard, Advanced). We ensure a secure and prompt payment processing procedure.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 8: Project Closure and Handover -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 8: Project Closure and Handover</h4>
+                <p>
+                    We finalize any outstanding project documentation and deliverables. Provide the client with all necessary access credentials, system documentation, and training materials if required. We ensure the client is well-equipped to effectively utilize the Inventory Management System.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 9: Post-Implementation Review (Optional) -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 9: Post-Implementation Review (Optional)</h4>
+                <p>
+                    After a certain period, we reach out to the client and consider conducting a post-implementation review to assess system performance and address any additional needs or enhancements. Throughout the project, we use the project workroom to keep the client updated on the progress by checking off completed steps, maintaining open communication, and ensuring that client satisfaction is achieved with the successful utilization of the Inventory Management System.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include MDBootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+     // Function to handle form submission
+    function saveProductData() {
+        // Get the values from the form fields
+        var productName = document.getElementById("productName").value;
+        var productQuantity = document.getElementById("productQuantity").value;
+
+        // Perform actions with the form data, e.g., send it to a server
+
+        // Close the modal
+        $('#productModal').modal('hide');
+    }
+</script>
+<script>
+    // Graph
+    var ctx = document.getElementById("myChart");
+
+    var myChart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        ],
+        datasets: [
+        {
+            label: 'Sales',
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: "transparent",
+            borderColor: "#007bff",
+            borderWidth: 4,
+            pointBackgroundColor: "#007bff",
+        },
+        ],
+    },
+    options: {
+        scales: {
+        yAxes: [
+            {
+            ticks: {
+                beginAtZero: false,
+            },
+            },
+        ],
+        },
+        legend: {
+        display: false,
+        },
+    },
+    });
+</script>
+
+</body>
+</html>

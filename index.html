@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <!-- Link to MDBootstrap CSS -->
+
+
+
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+    rel="stylesheet"
+    />
+
+    <!-- Your custom CSS can be included here -->
+    <style>
+        /* Add custom styles here */
+    </style>
+</head>
+<body style="background-color: rgb(246, 242, 242);">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Inventory Management</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container my-5">
+        <!-- Project Information -->
+        <h1 class="display-4">Inventory Management System</h1>
+        <p class="lead">Experience meets innovation in our project, setting us apart in the world of inventory management...</p>
+
+        <section class="" id="section-related-resources">
+
+            <style>
+              .btn-tag {
+                background-color: #ECEFF1;
+                text-transform: capitalize !important;
+                margin-bottom: 10px;
+                box-shadow: none;
+              }
+      
+              .btn-tag:hover {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;
+              }
+      
+            </style>
+      
+            <h4>Tags</h4>
+      
+              <!--Chips with links-->
+              <div class="justify-content-start text-start w-100 my-5">
+      
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Erp
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Data Management
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Inventory Report
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Inventory
+                </a>
+                
+                <a href="#" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                    <i class="fas fa-layer-group me-2"></i> Inventory Management
+                </a>
+                  
+
+              </div>
+      
+        </section>
+        
+        <!-- Pricing Table -->
+        <section class="text-center">
+          <h4 class="mb-4"><strong>Pricing</strong></h4>
+      
+          <div class="btn-group mb-4" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary active">One Time Purchase</button>
+              <button type="button" class="btn btn-primary active" disabled>Monthly billing</button>
+              <button type="button" class="btn btn-primary" disabled>
+                  Annual billing <small>(2 months FREE)</small>
+              </button>
+          </div>
+      
+          <div class="row">
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Starter</strong></p>
+                          <h5 class="mb-0">Inventory Management Basic</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">All features from the Standard Package</li>
+                              <li class="list-group-item">Delivery Days: 30</li>
+                              <li class="list-group-item">Number of Revisions: 2</li>
+                              <li class="list-group-item"><strong>Price: $90.76</strong></li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-success btn-sm">Get it</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card border border-primary">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Standard</strong></p>
+                          <h5 class="mb-0">Inventory Management Efficient</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">All features from the Standard Package plus extra revisions.</li>
+                              <li class="list-group-item">Delivery Days: 20</li>
+                              <li class="list-group-item">Number of Revisions: 4</li>
+                              <li class="list-group-item"><strong>Price: $136.14</strong></li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-primary btn-sm">Buy now</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Advanced</strong></p>
+                          <h5 class="mb-0">Inventory Management Fast</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">All features from the Standard Package plus exclusive premium features</li>
+                              <li class="list-group-item">Delivery Days: 15</li>
+                              <li class="list-group-item">Number of Revisions: 6</li>
+                              <li class="list-group-item"><strong>Price: $181.52</strong></li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-info btn-sm">Buy now</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+      
+                  <!-- Card -->
+                  <div class="card">
+      
+                      <div class="card-header bg-white py-3">
+                          <p class="text-uppercase small mb-2"><strong>Additional</strong></p>
+                          <h5 class="mb-0">Additional revision $27.23</h5>
+                      </div>
+      
+                      <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Add-on for extra revisions</li>
+                          </ul>
+                      </div>
+      
+                      <div class="card-footer bg-white py-3">
+                          <button type="button" class="btn btn-info btn-sm">Buy now</button>
+                      </div>
+      
+                  </div>
+                  <!-- Card -->
+      
+              </div>
+              <!--Grid column-->
+      
+          </div>
+
+
+          
+
+
+
+
+        </section>
+
+        
+
+
+
+
+        <!-- Carousel wrapper -->
+        <div id="carouselMDExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+          <!-- Slides -->
+          <div class="carousel-inner mb-5 shadow-1-strong rounded-3">
+            <div class="carousel-item active">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(88).webp" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(121).webp" class="d-block w-100"
+                alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(31).webp" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <!-- Slides -->
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMDExample"
+            data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#carouselMDExample"
+            data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- Controls -->
+
+          <!-- Thumbnails -->
+          <div class="carousel-indicators" style="margin-bottom: -20px;">
+            <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1" style="width: 100px;">
+              <img class="d-block w-100 shadow-1-strong rounded"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Others/Carousel-thumbs/img%20(88).webp" class="img-fluid" />
+            </button>
+            <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="1" aria-label="Slide 2"
+              style="width: 100px;">
+              <img class="d-block w-100 shadow-1-strong rounded"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Others/Carousel-thumbs/img%20(121).webp" class="img-fluid" />
+            </button>
+            <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="2" aria-label="Slide 3"
+              style="width: 100px;">
+              <img class="d-block w-100 shadow-1-strong rounded"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Others/Carousel-thumbs/img%20(31).webp" class="img-fluid" />
+            </button>
+          </div>
+          <!-- Thumbnails -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Project Images -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Project Images</h3>
+                <!-- Add project images here -->
+
+                <div class="container mb-4  mt-5 card">
+                    <div class="card-header py-3">
+                        <h5 class="mb-0 text-center"><strong>Inventory Management Dashboard</strong></h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-primary mb-3 col-md-3" id="addProductBtn" data-mdb-toggle="modal" data-mdb-target="#productModal">Insert New Product Data</button>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Unit</th>
+                                    <th>Batch ID</th>
+                                    <th>Manufacturing Date</th>
+                                    <th>Exp Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Rows with realistic data -->
+                                <tr>
+                                    <td>Product 1</td>
+                                    <td>100</td>
+                                    <td>pcs</td>
+                                    <td>123456</td>
+                                    <td>2023-01-15</td>
+                                    <td>2023-12-31</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="mdb-icon fas fa-file-pdf fa-2x"></i> 
+                                        </button>
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="mdb-icon fas fa-file-excel fa-2x"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-primary">
+                                            <i class="mdb-icon fas fa-edit fa-2x"></i> 
+                                        </button>
+                                        <button class="btn btn-sm btn-danger">
+                                            <i class="mdb-icon fas fa-trash fa-2x"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Product 2</td>
+                                    <td>50</td>
+                                    <td>pcs</td>
+                                    <td>789012</td>
+                                    <td>2023-02-20</td>
+                                    <td>2024-01-31</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="mdb-icon fas fa-file-pdf fa-2x"></i> 
+                                        </button>
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="mdb-icon fas fa-file-excel fa-2x"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-primary">
+                                            <i class="mdb-icon fas fa-edit fa-2x"></i> 
+                                        </button>
+                                        <button class="btn btn-sm btn-danger">
+                                            <i class="mdb-icon fas fa-trash fa-2x"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Product 3</td>
+                                    <td>75</td>
+                                    <td>pcs</td>
+                                    <td>345678</td>
+                                    <td>2023-03-10</td>
+                                    <td>2023-11-30</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="mdb-icon fas fa-file-pdf fa-2x"></i> 
+                                        </button>
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="mdb-icon fas fa-file-excel fa-2x"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-primary">
+                                            <i class="mdb-icon fas fa-edit fa-2x"></i> 
+                                        </button>
+                                        <button class="btn btn-sm btn-danger">
+                                            <i class="mdb-icon fas fa-trash fa-2x"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>    
+                    </div>
+                    
+                </div>
+
+                <section class="mb-4 card">
+                    <div class="card">
+                      <div class="card-header py-3">
+                        <h5 class="mb-0 text-center"><strong>Sales</strong></h5>
+                      </div>
+                      <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                        <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" height="248" style="display: block; width: 827px; height: 248px;" width="827"></canvas>
+                      </div>
+                    </div>
+                </section>
+
+
+                <section class="mb-4">
+                    <div class="card">
+                      <div class="card-header text-center py-3">
+                        <h5 class="mb-0 text-center">
+                          <strong>Sales Performance KPIs</strong>
+                        </h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <table class="table table-hover text-nowrap">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Product Detail Views</th>
+                                <th scope="col">Unique Purchases</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Product Revenue</th>
+                                <th scope="col">Avg. Price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Value</th>
+                                <td>18,492</td>
+                                <td>228</td>
+                                <td>350</td>
+                                <td>$4,787.64</td>
+                                <td>$13.68</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Percentage change</th>
+                                <td>
+                                  <span class="text-danger">
+                                    <i class="fas fa-caret-down me-1"></i><span>-48.8%%</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-success">
+                                    <i class="fas fa-caret-up me-1"></i><span>14.0%</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-success">
+                                    <i class="fas fa-caret-up me-1"></i><span>46.4%</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-success">
+                                    <i class="fas fa-caret-up me-1"></i><span>29.6%</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-danger">
+                                    <i class="fas fa-caret-down me-1"></i><span>-11.5%</span>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Absolute change</th>
+                                <td>
+                                  <span class="text-danger">
+                                    <i class="fas fa-caret-down me-1"></i><span>-17,654</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-success">
+                                    <i class="fas fa-caret-up me-1"></i><span>28</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-success">
+                                    <i class="fas fa-caret-up me-1"></i><span>111</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-success">
+                                    <i class="fas fa-caret-up me-1"></i><span>$1,092.72</span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="text-danger">
+                                    <i class="fas fa-caret-down me-1"></i><span>$-1.78</span>
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+
+                <section class="mb-4">
+                    <div class="card">
+                        <div class="card-header text-center py-3">
+                            <h5 class="mb-0 text-center">
+                                <strong>Customers</strong>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table align-middle mb-0 bg-white">
+                                    <thead class="bg-light">
+                                      <tr>
+                                        <th>Name</th>
+                                        <th>Title</th>
+                                        <th>Status</th>
+                                        <th>Position</th>
+                                        <th>Actions</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="d-flex align-items-center">
+                                            <img
+                                                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                class="rounded-circle"
+                                                />
+                                            <div class="ms-3">
+                                              <p class="fw-bold mb-1">John Doe</p>
+                                              <p class="text-muted mb-0">john.doe@gmail.com</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">Software engineer</p>
+                                          <p class="text-muted mb-0">IT department</p>
+                                        </td>
+                                        <td>
+                                          <span class="badge badge-success rounded-pill d-inline">Active</span>
+                                        </td>
+                                        <td>Senior</td>
+                                        <td>
+                                          <button type="button" class="btn btn-link btn-sm btn-rounded">
+                                            Edit
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="d-flex align-items-center">
+                                            <img
+                                                src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                                                class="rounded-circle"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                />
+                                            <div class="ms-3">
+                                              <p class="fw-bold mb-1">Alex Ray</p>
+                                              <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">Consultant</p>
+                                          <p class="text-muted mb-0">Finance</p>
+                                        </td>
+                                        <td>
+                                          <span class="badge badge-primary rounded-pill d-inline"
+                                                >Onboarding</span
+                                            >
+                                        </td>
+                                        <td>Junior</td>
+                                        <td>
+                                          <button
+                                                  type="button"
+                                                  class="btn btn-link btn-rounded btn-sm fw-bold"
+                                                  data-mdb-ripple-color="dark"
+                                                  >
+                                            Edit
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div class="d-flex align-items-center">
+                                            <img
+                                                src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                                                class="rounded-circle"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                />
+                                            <div class="ms-3">
+                                              <p class="fw-bold mb-1">Kate Hunington</p>
+                                              <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <p class="fw-normal mb-1">Designer</p>
+                                          <p class="text-muted mb-0">UI/UX</p>
+                                        </td>
+                                        <td>
+                                          <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+                                        </td>
+                                        <td>Senior</td>
+                                        <td>
+                                          <button
+                                                  type="button"
+                                                  class="btn btn-link btn-rounded btn-sm fw-bold"
+                                                  data-mdb-ripple-color="dark"
+                                                  >
+                                            Edit
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+    
+            </div>
+        </div>
+        
+
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="productModalLabel">Insert Product Data</h5>
+                  <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="productName">Name</label>
+                      <input type="text" class="form-control" id="productName" placeholder="Enter product name">
+                    </div>
+                    <div class="form-group">
+                      <label for="productQuantity">Quantity</label>
+                      <input type="number" class="form-control" id="productQuantity" placeholder="Enter quantity">
+                    </div>
+                    <div class="form-group">
+                      <label for="productUnit">Unit</label>
+                      <input type="text" class="form-control" id="productUnit" placeholder="Enter unit">
+                    </div>
+                    <div class="form-group">
+                      <label for="productBatchID">Batch ID</label>
+                      <input type="text" class="form-control" id="productBatchID" placeholder="Enter batch ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="productManufacturingDate">Manufacturing Date</label>
+                      <input type="date" class="form-control" id="productManufacturingDate">
+                    </div>
+                    <div class="form-group">
+                      <label for="productExpDate">Exp Date</label>
+                      <input type="date" class="form-control" id="productExpDate">
+                    </div>
+                    <!-- Add more form fields as needed -->
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Create</button>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+        
+        <section class="mb-4">
+            <div class="row">
+                
+                
+                <div class="col-xl-6  col-sm-6 col-12 mb-4">
+                    <div class="card">
+                        <div class="card-header text-center py-3">
+                            <h5 class="mb-0 text-center">
+                                <strong>Shipping Form</strong>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                          <form>
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row mb-4">
+                              <div class="col">
+                                <div class="form-outline">
+                                  <input type="text" id="form6Example1" class="form-control" />
+                                  <label class="form-label" for="form6Example1">First name</label>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-outline">
+                                  <input type="text" id="form6Example2" class="form-control" />
+                                  <label class="form-label" for="form6Example2">Last name</label>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <!-- Text input -->
+                            <div class="form-outline mb-4">
+                              <input type="text" id="form6Example3" class="form-control" />
+                              <label class="form-label" for="form6Example3">Company name</label>
+                            </div>
+                          
+                            <!-- Text input -->
+                            <div class="form-outline mb-4">
+                              <input type="text" id="form6Example4" class="form-control" />
+                              <label class="form-label" for="form6Example4">Address</label>
+                            </div>
+                          
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form6Example5" class="form-control" />
+                              <label class="form-label" for="form6Example5">Email</label>
+                            </div>
+                          
+                            <!-- Number input -->
+                            <div class="form-outline mb-4">
+                              <input type="number" id="form6Example6" class="form-control" />
+                              <label class="form-label" for="form6Example6">Phone</label>
+                            </div>
+                          
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                              <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                              <label class="form-label" for="form6Example7">Additional information</label>
+                            </div>
+                          
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                              <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                              <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                            </div>
+                          
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6  col-sm-6 col-12 mb-4">
+                    <div class="card">
+                        <div class="card-header text-center py-3">
+                            <h5 class="mb-0 text-center">
+                                <strong>Login/Register Form</strong>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                          <!-- Pills navs -->
+                          <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a
+                                class="nav-link active"
+                                id="tab-login"
+                                data-mdb-toggle="pill"
+                                href="#pills-login"
+                                role="tab"
+                                aria-controls="pills-login"
+                                aria-selected="true"
+                                >Login</a
+                              >
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a
+                                class="nav-link"
+                                id="tab-register"
+                                data-mdb-toggle="pill"
+                                href="#pills-register"
+                                role="tab"
+                                aria-controls="pills-register"
+                                aria-selected="false"
+                                >Register</a
+                              >
+                            </li>
+                          </ul>
+                          <!-- Pills navs -->
+                
+                          <!-- Pills content -->
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                              <form>
+                                <div class="text-center mb-3">
+                                  <p>Sign in with:</p>
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                  </button>
+                
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                  </button>
+                
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                  </button>
+                
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                  </button>
+                                </div>
+                
+                                <p class="text-center">or:</p>
+                
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                  <input type="email" id="loginName" class="form-control" />
+                                  <label class="form-label" for="loginName">Email or username</label>
+                                </div>
+                
+                                <!-- Password input -->
+                                <div class="form-outline mb-4">
+                                  <input type="password" id="loginPassword" class="form-control" />
+                                  <label class="form-label" for="loginPassword">Password</label>
+                                </div>
+                
+                                <!-- 2 column grid layout -->
+                                <div class="row mb-4">
+                                  <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check mb-3 mb-md-0">
+                                      <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                      <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                    </div>
+                                  </div>
+                
+                                  <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Simple link -->
+                                    <a href="#!">Forgot password?</a>
+                                  </div>
+                                </div>
+                
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                
+                                <!-- Register buttons -->
+                                <div class="text-center">
+                                  <p>Not a member? <a href="#!">Register</a></p>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                              <form>
+                                <div class="text-center mb-3">
+                                  <p>Sign up with:</p>
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                  </button>
+                
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                  </button>
+                
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                  </button>
+                
+                                  <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                  </button>
+                                </div>
+                
+                                <p class="text-center">or:</p>
+                
+                                <!-- Name input -->
+                                <div class="form-outline mb-4">
+                                  <input type="text" id="registerName" class="form-control" />
+                                  <label class="form-label" for="registerName">Name</label>
+                                </div>
+                
+                                <!-- Username input -->
+                                <div class="form-outline mb-4">
+                                  <input type="text" id="registerUsername" class="form-control" />
+                                  <label class="form-label" for="registerUsername">Username</label>
+                                </div>
+                
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                  <input type="email" id="registerEmail" class="form-control" />
+                                  <label class="form-label" for="registerEmail">Email</label>
+                                </div>
+                
+                                <!-- Password input -->
+                                <div class="form-outline mb-4">
+                                  <input type="password" id="registerPassword" class="form-control" />
+                                  <label class="form-label" for="registerPassword">Password</label>
+                                </div>
+                
+                                <!-- Repeat Password input -->
+                                <div class="form-outline mb-4">
+                                  <input type="password" id="registerRepeatPassword" class="form-control" />
+                                  <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                </div>
+                
+                                <!-- Checkbox -->
+                                <div class="form-check d-flex justify-content-center mb-4">
+                                  <input
+                                    class="form-check-input me-2"
+                                    type="checkbox"
+                                    value=""
+                                    id="registerCheck"
+                                    checked
+                                    aria-describedby="registerCheckHelpText"
+                                  />
+                                  <label class="form-check-label" for="registerCheck">
+                                    I have read and agree to the terms
+                                  </label>
+                                </div>
+                
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                              </form>
+                            </div>
+                          </div>
+                          <!-- Pills content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-center">Counters</h2>
+
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between px-md-1">
+                        <div class="align-self-center">
+                          <i class="fas fa-boxes text-info fa-3x"></i>
+                        </div>
+                        <div class="text-end">
+                          <h3>278</h3>
+                          <p class="mb-0">Total Products</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between px-md-1">
+                        <div class="align-self-center">
+                          <i class="fas fa-cart-plus text-warning fa-3x"></i>
+                        </div>
+                        <div class="text-end">
+                          <h3>156</h3>
+                          <p class="mb-0">New Orders</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between px-md-1">
+                        <div class="align-self-center">
+                          <i class="fas fa-chart-line text-success fa-3x"></i>
+                        </div>
+                        <div class="text-end">
+                          <h3>64.89 %</h3>
+                          <p class="mb-0">Order Completion Rate</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between px-md-1">
+                        <div class="align-self-center">
+                          <i class="fas fa-users text-danger fa-3x"></i>
+                        </div>
+                        <div class="text-end">
+                          <h3>423</h3>
+                          <p class="mb-0">Total Customers</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            
+            <div class="row">
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-danger">278</h3>
+                        <p class="mb-0">Shipped</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="fas fa-rocket text-danger fa-3x"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-success">156</h3>
+                        <p class="mb-0">Customers</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="far fa-user text-success fa-3x"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-warning">64.89 %</h3>
+                        <p class="mb-0">Conversion Rate</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="fas fa-chart-pie text-warning fa-3x"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-info">423</h3>
+                        <p class="mb-0">Support Tickets</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="far fa-life-ring text-info fa-3x"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-info">278</h3>
+                        <p class="mb-0">Reports</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="fas fa-book-open text-info fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="px-md-1">
+                      <div class="progress mt-3 mb-1 rounded" style="height: 7px">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-warning">156</h3>
+                        <p class="mb-0">Total Reviews</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="far fa-comments text-warning fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="px-md-1">
+                      <div class="progress mt-3 mb-1 rounded" style="height: 7px">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-success">64.89 %</h3>
+                        <p class="mb-0">Bounce Rate</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="fas fa-mug-hot text-success fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="px-md-1">
+                      <div class="progress mt-3 mb-1 rounded" style="height: 7px">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between px-md-1">
+                      <div>
+                        <h3 class="text-danger">423</h3>
+                        <p class="mb-0">Returned To Inventory</p>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="fas fa-map-signs text-danger fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="px-md-1">
+                      <div class="progress mt-3 mb-1 rounded" style="height: 7px">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        
+        
+        <div class="alert alert-success d-flex justify-content-between" role="alert" data-mdb-color="success">
+            <p class="mb-0"><i class="fas fa-gem me-2">
+                </i>You have been rewarded for 
+                <a href="/docs/standard/pro/" class="text-reset"><strong>Sales Milestone</strong>
+                </a> package.
+            </p>
+            <strong>
+                <a href="/docs/standard/pro/" class="text-reset d-none d-lg-block">Learn
+                more</a>
+            </strong>
+        </div>
+
+        <section>
+            <div class="row">
+              <div class="col-xl-6 col-md-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between p-md-1">
+                      <div class="d-flex flex-row">
+                        <div class="align-self-center">
+                          <i class="fa-solid fa-truck text-info fa-3x me-4"></i>
+                        </div>
+                        <div>
+                          <h4>Total Transportation</h4>
+                          <p class="mb-0">Monthly vehicle shift</p>
+                        </div>
+                      </div>
+                      <div class="align-self-center">
+                        <h2 class="h1 mb-0">18,000</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between p-md-1">
+                      <div class="d-flex flex-row">
+                        <div class="align-self-center">
+                          <i class="fa-solid fa-warehouse text-warning fa-3x me-4"></i>
+                        </div>
+                        <div>
+                          <h4>Total Warehoused</h4>
+                          <p class="mb-0">Monthly warehouse stocks</p>
+                        </div>
+                      </div>
+                      <div class="align-self-center">
+                        <h2 class="h1 mb-0">84,695</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-md-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between p-md-1">
+                      <div class="d-flex flex-row">
+                        <div class="align-self-center">
+                          <h2 class="h1 mb-0 me-4">$76,456.00</h2>
+                        </div>
+                        <div>
+                          <h4>Total Sales</h4>
+                          <p class="mb-0">Monthly Sales Amount</p>
+                        </div>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="far fa-heart text-danger fa-3x"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between p-md-1">
+                      <div class="d-flex flex-row">
+                        <div class="align-self-center">
+                          <h2 class="h1 mb-0 me-4">$36,000.00</h2>
+                        </div>
+                        <div>
+                          <h4>Total Cost</h4>
+                          <p class="mb-0">Monthly Cost</p>
+                        </div>
+                      </div>
+                      <div class="align-self-center">
+                        <i class="fas fa-wallet text-success fa-3x"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+          
+          
+
+        <!-- Project Video -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Project Video</h3>
+                
+        </div>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/QfYZyR3I8Q8" title="YouTube video" allowfullscreen></iframe>
+        </div>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+        </div>
+        
+
+        <!-- Requirements for the Client -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Requirements for the Client</h3>
+                <p>We need your inventory requirements (e.g.: products you stock, categories, units, exp date, batch number, attributes), existing data if exists, user roles, barcode/RFD details, report format, budget, timeline, and contact details to start.</p>
+
+                <p>In detail, to get started on creating an inventory system for your business, we would need the following information and resources from you:</p>
+
+                <ol>
+                    <li>
+                        <h4>Detailed Requirements:</h4>
+                        <p>Provide a comprehensive list of your inventory management needs and requirements. Include specifics such as the types of products/items you stock, units of measurement, categories, and any special attributes you want to track (e.g., serial numbers, expiration dates).</p>
+                    </li>
+                    <li>
+                        <h4>Inventory Data:</h4>
+                        <p>If you already have an existing inventory system or records, we'll need access to your current inventory data. This includes item names, quantities, descriptions, prices, and any other relevant details.</p>
+                    </li>
+                    <li>
+                        <h4>Integration Requirements:</h4>
+                        <p>If you use other software systems (e.g., accounting software, e-commerce platforms), let us know about any integration requirements. This includes any existing software you want the inventory system to work seamlessly with.</p>
+                    </li>
+                    <li>
+                        <h4>User Roles and Permissions:</h4>
+                        <p>Define who within your organization will have access to the inventory system and specify their roles and permissions. For example, who can add or edit inventory items, who can view reports, etc.</p>
+                    </li>
+                    <li>
+                        <h4>Barcode or RFID Information (if applicable):</h4>
+                        <p>If you plan to use barcodes or RFID tags for item tracking, provide details about your barcode or RFID system. This includes barcode formats and any specific scanners or equipment you use.</p>
+                    </li>
+                    <li>
+                        <h4>Reporting and Analytics Requirements:</h4>
+                        <p>Describe the types of reports, analytics, and the format you need from the inventory system. This could include inventory levels, sales trends, reorder points, and more.</p>
+                    </li>
+                    <li>
+                        <h4>Budget and Timeline:</h4>
+                        <p>Provide information about your budget constraints and the desired project timeline. This will help us align our proposal with your expectations.</p>
+                    </li>
+                    <li>
+                        <h4>Collaboration and Communication:</h4>
+                        <p>Establish communication channels and points of contact. Identify who from your team will be coordinating with our development team and provide their contact information.</p>
+                    </li>
+                    <li>
+                        <h4>Security and Access Control:</h4>
+                        <p>Discuss security requirements, including data encryption, user authentication, and access control measures.</p>
+                    </li>
+                    <li>
+                        <h4>Training Needs:</h4>
+                        <p>Determine whether your team will require training on how to use the inventory system effectively.</p>
+                    </li>
+                </ol>
+
+                <p>Once we have these details, we can begin the process of designing and developing an inventory system tailored to your specific needs. Clear and comprehensive information at the outset will ensure a smoother and more successful project.</p>
+            </div>
+        </div>
+
+
+        <!-- Project Summary -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Project Summary</h3>
+                <small>what sets us apart.</small>
+                <!-- Include the project summary content here -->
+                <p>Experience meets innovation in our project, setting us apart in the world of inventory management. With over 6 years of dedicated service in both job and agency settings, our team is primed to catapult your company's operations to the next level.</p>
+
+                <p>What makes us unique is our unwavering commitment to optimizing your data and operations for seamless functionality through our state-of-the-art system. We prioritize precision, efficiency, and reliability, ensuring that every facet of your inventory management runs smoothly.</p>
+
+                <p>Our hallmark is the delivery of work that is not just original but exudes top-tier quality. We understand the importance of your business processes and have designed our project to align seamlessly with your needs. Trust us to provide a solution that doesn't just meet your expectations but exceeds them.</p>
+
+                <p>Join hands with us, and together, we'll revolutionize how you manage your inventory. Experience the power of innovation combined with years of expertise. Your success story starts here.</p>
+
+            </div>
+        </div>
+
+        <!-- Project Steps -->
+       <!-- Project Steps -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3 class="mb-4">Project Steps</h3>
+            </div>
+        </div>
+
+        <!-- Step 1: Client Purchases the Project -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 1: Client Purchases the Project and Sends Requirements</h4>
+                <p>
+                    The project begins when the client selects one of the available packages (Starter, Standard, Advanced) that aligns with their needs and budget. After purchasing, the client is responsible for submitting detailed inventory management requirements, following the outlined information in the "Requirements for the Client" section.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 2: Project Initiation and Planning -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 2: Project Initiation and Planning</h4>
+                <p>
+                    We, as the service provider, initiate the project by reviewing the client's requirements in detail and seeking clarification if necessary. We develop a project plan that clearly defines the scope, timeline, and necessary resources for the project. We also establish transparent communication channels to facilitate ongoing collaboration.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 3: Development and System Customization -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 3: Development and System Customization</h4>
+                <p>
+                    We commence the development phase, creating the Inventory Management System in accordance with the client's specifications. We customize the system to incorporate all specified features, such as product categorization, user roles, barcode integration, and report formats. We maintain regular updates to keep the client informed about the progress of development.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 4: Data Migration and Integration (if applicable) -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 4: Data Migration and Integration (if applicable)</h4>
+                <p>
+                    If the client has existing inventory data, we execute data migration to transition it into the new system while ensuring data accuracy and integrity. If integration with other software platforms, such as accounting or e-commerce systems, is required, we perform the necessary integrations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 5: Testing and Quality Assurance -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 5: Testing and Quality Assurance</h4>
+                <p>
+                    We conduct comprehensive testing of the Inventory Management System to identify and rectify any bugs or issues. We thoroughly evaluate various aspects, including functionality, security, performance, and user experience. We ensure the system fulfills the specified requirements and operates seamlessly.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 6: Client Review and Approval -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 6: Client Review and Approval</h4>
+                <p>
+                    We present the developed Inventory Management System to the client for their thorough review. The client evaluates the system's functionality, usability, and adherence to their stipulated requirements. Upon the client's approval, the project proceeds to the next phase.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 7: Client Payment -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 7: Client Payment</h4>
+                <p>
+                    Once the client approves the work and is satisfied with the system, they proceed with payment according to the selected package (Starter, Standard, Advanced). We ensure a secure and prompt payment processing procedure.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 8: Project Closure and Handover -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 8: Project Closure and Handover</h4>
+                <p>
+                    We finalize any outstanding project documentation and deliverables. Provide the client with all necessary access credentials, system documentation, and training materials if required. We ensure the client is well-equipped to effectively utilize the Inventory Management System.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 9: Post-Implementation Review (Optional) -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Step 9: Post-Implementation Review (Optional)</h4>
+                <p>
+                    After a certain period, we reach out to the client and consider conducting a post-implementation review to assess system performance and address any additional needs or enhancements. Throughout the project, we use the project workroom to keep the client updated on the progress by checking off completed steps, maintaining open communication, and ensuring that client satisfaction is achieved with the successful utilization of the Inventory Management System.
+                </p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <section>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 col-xl-8 text-center">
+              <h3 class="mb-4">Developers</h3>
+              <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                quisquam eum porro a pariatur veniam.
+              </p>
+            </div>
+          </div>
+        
+          <div class="row text-center">
+            <div class="col-md-4 mb-5 mb-md-0">
+              <div class="card testimonial-card">
+                <div class="card-up" style="background-color: #9d789b;"></div>
+                <div class="avatar mx-auto bg-white">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                    class="rounded-circle img-fluid" />
+                </div>
+                <div class="card-body">
+                  <h4 class="mb-4">Maria Smantha</h4>
+                  <hr />
+                  <p class="dark-grey-text mt-4">
+                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet eos adipisci,
+                    consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+              <div class="card testimonial-card">
+                <div class="card-up" style="background-color: #7a81a8;"></div>
+                <div class="avatar mx-auto bg-white">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                    class="rounded-circle img-fluid" />
+                </div>
+                <div class="card-body">
+                  <h4 class="mb-4">Lisa Cudrow</h4>
+                  <hr />
+                  <p class="dark-grey-text mt-4">
+                    <i class="fas fa-quote-left pe-2"></i>Neque cupiditate assumenda in maiores
+                    repudi mollitia architecto.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-0">
+              <div class="card testimonial-card">
+                <div class="card-up" style="background-color: #6d5b98;"></div>
+                <div class="avatar mx-auto bg-white">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                    class="rounded-circle img-fluid" />
+                </div>
+                <div class="card-body">
+                  <h4 class="mb-4">John Smith</h4>
+                  <hr />
+                  <p class="dark-grey-text mt-4">
+                    <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                    aliquam repellat rem unde ducimus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        
+    </div>
+
+
+    
+
+    
+
+    
+
+    <!-- Include MDBootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+     // Function to handle form submission
+    function saveProductData() {
+        // Get the values from the form fields
+        var productName = document.getElementById("productName").value;
+        var productQuantity = document.getElementById("productQuantity").value;
+
+        // Perform actions with the form data, e.g., send it to a server
+
+        // Close the modal
+        $('#productModal').modal('hide');
+    }
+</script>
+<script>
+    // Graph
+    var ctx = document.getElementById("myChart");
+
+    var myChart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        ],
+        datasets: [
+        {
+            label: 'Sales',
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: "transparent",
+            borderColor: "#007bff",
+            borderWidth: 4,
+            pointBackgroundColor: "#007bff",
+        },
+        ],
+    },
+    options: {
+        scales: {
+        yAxes: [
+            {
+            ticks: {
+                beginAtZero: false,
+            },
+            },
+        ],
+        },
+        legend: {
+        display: false,
+        },
+    },
+    });
+</script>
+
+</body>
+</html>
